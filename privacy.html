@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ant Colony Simulator — Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for Ant Colony Simulator." />
+
+  <style>
+    :root{
+      --bg:#ffffff;
+      --card:#f6f7f9;
+      --text:#111827;
+      --muted:#6b7280;
+      --border:#e5e7eb;
+      --link:#2563eb;
+      --shadow: 0 10px 30px rgba(0,0,0,.06);
+      --radius: 16px;
+      --max: 900px;
+      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{
+        --bg:#0b1220;
+        --card:#0f1a30;
+        --text:#e5e7eb;
+        --muted:#9ca3af;
+        --border:#1f2a44;
+        --link:#60a5fa;
+        --shadow: 0 10px 30px rgba(0,0,0,.35);
+      }
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:var(--sans);
+      background: radial-gradient(1000px 600px at 20% 0%, rgba(37,99,235,.10), transparent 60%),
+                  radial-gradient(900px 500px at 90% 10%, rgba(236,72,153,.10), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+    .wrap{max-width:var(--max); margin:0 auto; padding: 30px 18px 60px;}
+    header{
+      padding: 30px 18px 0;
+    }
+    .hero{
+      max-width:var(--max);
+      margin:0 auto;
+      padding: 18px;
+    }
+    .title{
+      display:flex; align-items:center; gap:14px;
+      margin-bottom: 10px;
+    }
+    .logo{
+      width:46px; height:46px; border-radius:14px;
+      border:1px solid var(--border);
+      display:grid; place-items:center;
+      box-shadow: var(--shadow);
+      background: linear-gradient(135deg, rgba(37,99,235,.18), rgba(236,72,153,.16));
+      font-size: 22px;
+    }
+    h1{margin:0; font-size: 28px;}
+    .subtitle{margin:6px 0 0; color:var(--muted); max-width: 75ch;}
+    .card{
+      background: rgba(255,255,255,.6);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px;
+      box-shadow: var(--shadow);
+      margin-top: 16px;
+    }
+    @media (prefers-color-scheme: dark){
+      .card{background: rgba(15,26,48,.78);}
+    }
+    h2{margin: 0 0 10px; font-size: 18px;}
+    p{margin: 10px 0;}
+    a{color: var(--link); text-decoration:none;}
+    a:hover{text-decoration: underline;}
+    ul{margin: 10px 0 0 18px; padding:0;}
+    li{margin: 8px 0;}
+    .hr{height:1px; background: var(--border); margin: 14px 0;}
+    .pillrow{display:flex; flex-wrap:wrap; gap:8px; margin-top: 10px;}
+    .pill{
+      padding: 7px 10px;
+      border-radius: 999px;
+      border:1px solid var(--border);
+      color: var(--muted);
+      font-size: 13px;
+      background: transparent;
+      white-space: nowrap;
+    }
+    .mono{font-family:var(--mono); font-size: 13px;}
+    .small{font-size: 13px; color: var(--muted);}
+    footer{
+      margin-top: 18px;
+      padding: 18px;
+      color: var(--muted);
+      text-align:center;
+      font-size: 13px;
+      border-top: 1px solid var(--border);
+      background: rgba(255,255,255,.35);
+    }
+    @media (prefers-color-scheme: dark){
+      footer{background: rgba(15,26,48,.35);}
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="hero">
+      <div class="title">
+        <div class="logo" aria-hidden="true">🔒</div>
+        <div>
+          <h1>Privacy Policy</h1>
+          <p class="subtitle">
+            This Privacy Policy explains how <strong>Ant Colony Simulator</strong> handles information.
+            The app is designed to run offline and does not collect personal data.
+          </p>
+        </div>
+      </div>
+
+      <div class="pillrow" aria-label="Key points">
+        <span class="pill">No accounts</span>
+        <span class="pill">No analytics</span>
+        <span class="pill">No tracking</span>
+        <span class="pill">Offline simulation</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h2>Summary</h2>
+      <p>
+        <strong>Ant Colony Simulator does not collect, store, sell, or share personal information.</strong>
+        The simulation runs locally on your device.
+      </p>
+      <p class="small">
+        Effective date: <span id="effectiveDate"></span>
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Information We Collect</h2>
+      <p>
+        We do <strong>not</strong> collect personal data (such as name, email, device identifiers, precise location, contacts, photos, etc.).
+      </p>
+      <ul>
+        <li>No account creation.</li>
+        <li>No sign-in providers.</li>
+        <li>No third-party analytics SDKs.</li>
+        <li>No advertising networks.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Data Stored on Your Device</h2>
+      <p>
+        The app may store basic app state locally (for example, your selected <span class="mono">Seed</span>,
+        <span class="mono">Nodes</span>, and <span class="mono">Edges</span>) so your last setup can be restored.
+        This information stays on your device.
+      </p>
+      <p class="small">
+        If you delete the app, this local data is removed by iOS.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Network &amp; Third Parties</h2>
+      <p>
+        The app does not require an internet connection and does not send your data to any server.
+      </p>
+      <p>
+        We do not integrate third-party tracking, analytics, or advertising services.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Permissions</h2>
+      <p>
+        Ant Colony Simulator does not request sensitive permissions (such as location, contacts, camera, microphone).
+      </p>
+      <p class="small">
+        If a future version adds optional permissions, this policy will be updated and the app will clearly explain why the permission is needed.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Children’s Privacy</h2>
+      <p>
+        The app does not knowingly collect personal information from children.
+        Since the app does not collect personal data at all, there is no child-specific data processing.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Changes to This Policy</h2>
+      <p>
+        If this policy changes, the updated version will be posted on this page with a new effective date.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Contact</h2>
+      <p>
+        If you have questions about this Privacy Policy, contact:
+        <a href="mailto:pendrawapp@gmail.com">pendrawapp@gmail.com</a>
+      </p>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Ant Colony Simulator •
+      <a href="mailto:pendrawapp@gmail.com">pendrawapp@gmail.com</a>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    // Set effective date to today's date by default (edit if you want a fixed date)
+    const d = new Date();
+    document.getElementById("effectiveDate").textContent = d.toISOString().slice(0,10);
+  </script>
+</body>
+</html>
